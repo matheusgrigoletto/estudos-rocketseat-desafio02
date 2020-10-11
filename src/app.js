@@ -11,7 +11,43 @@ app.use(express.json());
 app.use(cors());
 
 // variável de memória, criada toda vez que inicia o app #NSFP (Non Safe For Production)
-const repositories = [];
+const repositories = [
+  {
+      "id": "ff521081-0c83-42ce-8bdc-2521549bbeca",
+      "likes": 0,
+      "url": "https://github.com/Rocketseat/umbriel",
+      "title": "Umbriel",
+      "techs": ["Node", "Express", "TypeScript"]
+  },
+  {
+      "id": "77ea2377-18f3-4234-a5c6-99ec013042cd",
+      "likes": 0,
+      "url": "https://github.com/matheusgrigoletto/swift",
+      "title": "Swift",
+      "techs": ["Swift"]
+  },
+  {
+      "id": "ce64e912-3910-4fa7-a100-aa398b85fb80",
+      "likes": 0,
+      "url": "https://github.com/matheusgrigoletto/flutter",
+      "title": "Flutter",
+      "techs": ["Flutter", "Dart"]
+  },
+  {
+      "id": "23e35f84-3324-4319-94e7-ec25cccc2381",
+      "likes": 0,
+      "url": "https://github.com/matheusgrigoletto/react",
+      "title": "React",
+      "techs": ["React", "Javascript", "TypeScript"]
+  },
+  {
+      "id": "5a743eab-5ece-4c7a-b517-3581f45df9db",
+      "likes": 0,
+      "url": "https://github.com/matheusgrigoletto/angular",
+      "title": "Angular",
+      "techs": ["Angular", "TypeScript"]
+  },
+];
 
 /**
  * Middleware que gera ID e inicializa o número de likes
